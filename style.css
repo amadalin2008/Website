@@ -1,0 +1,113 @@
+body {
+background: url('Oradea.jpg') no-repeat;
+background-size: cover;
+font-family: Arial;
+color:white;
+}
+ul {
+    margin:0px;
+    padding-top:50px;
+    padding-bottom:60px;
+    list-style: none;
+}
+ul li {
+    float: left;
+    width: 350px;
+    height: 40px;
+    background-color:rgb(110, 22, 22);
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+ul li:hover {
+    background-color: red;
+}
+button {
+    background-color:black;
+    color:white;
+    float: left;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    list-style: none;
+    font-family: Arial;
+}
+button:hover {
+    background-color: red;
+}
+button1 {
+    background-color:black;
+    color:white;
+    float: left;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    list-style: none;
+    font-family: Arial;
+}
+button1:hover {
+    background-color: red;
+}
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+  }
+p {
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+  }
+  iframe {
+    padding-top:80px;
+    padding-bottom:60px;
+    list-style: none;
+
+  }
+  @keyframes slider {
+      0% {
+          Left: 0;
+      }
+      20% {
+          Left: -50%;
+      }
+      25% {
+          Left: -100%;
+      }
+      45% {
+          Left: -150%;
+      }
+      50% {
+          Left: -200%;
+      }
+      70%{
+          Left: -250%;
+      }
+      75% {
+          Left: -300%;
+      }
+      95% {
+          Left: -350%;
+      }
+      100% {
+          Left: -400%;
+      }
+  }
+  #slider {
+    overflow: hidden;    
+  }
+  #slider figure img {
+      width:20%;
+      float:left;
+  }
+  #slider figure {
+      padding-top:60px;
+      position: relative;
+      width: 250%;
+      margin: 0;
+      left:0;
+      text-align: center;
+      font-size: 0;
+      animation: 40s slider infinite;
+  }

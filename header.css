@@ -6,11 +6,15 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 
 header div.logo {
+  margin-left: 25px;
+}
+
+header div.logo img {
   height: 100%;
-  width: 100px;
 }
 
 header ul.menu {

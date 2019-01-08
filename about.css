@@ -1,0 +1,20 @@
+#about {
+  padding: 100px 12%;
+  text-align: center;
+}
+
+#about > .title {
+  color: #111;
+  letter-spacing: 10px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+#about > p {
+  color: #777;
+  line-height: 27px;
+}
+
+#about > p:first-of-type {
+  margin-bottom: 40px;
+}

@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="/favicon.ico">
         <title>Oradea</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- makes browsers render all elements more consistently and in line with modern standards -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <!-- <link href="style.css" rel="stylesheet"> -->
-        <link href="./stylesheet/header.css" rel="stylesheet">
-        <link href="./stylesheet/hero.css" rel="stylesheet">
-        <link href="./stylesheet/details.css" rel="stylesheet">
-        <link href="./stylesheet/images.css" rel="stylesheet">
-        <link href="./stylesheet/footer.css" rel="stylesheet">
-        <script src="./javascript/menu.js"></script>
+        <!-- stylesheets -->
+        <link href="stylesheet/style.css" rel="stylesheet">
+        <link href="stylesheet/header.css" rel="stylesheet">
+        <link href="stylesheet/slideshow.css" rel="stylesheet">
+        <link href="stylesheet/about.css" rel="stylesheet">
+        <link href="stylesheet/video.css" rel="stylesheet">
+        <link href="stylesheet/footer.css" rel="stylesheet">
+        <!-- javascript -->
+        <script src="javascript/slideshow.js"></script>
     </head>
 
     <body>
         <header>
             <div class="logo">
-                <a href="#">Oradea</a>
+                <a href="#">
+                    <img src="images/logo.png" alt="logo" />
+                </a>
             </div>
+            <!-- ul - unorder list -->
             <ul class="menu">
                 <li class="item">
-                    <a href="#details">About</a>
-                </li>
-                <li class="item">
-                    <a href="#images">Images</a>
+                    <a href="#about">Despre</a>
                 </li>
                 <li class="item">
                     <a href="#video">Video</a>
@@ -36,62 +35,73 @@
             </ul>
         </header>
 
-        <div id="hero"></div>
-
-        <div id="details">
-            <h1 class="title">Orasul Oradea</h1>
-            <div class="columns-2">
-                <p>
-                    Oradea, mai demult Oradea Mare, este municipiul de resedinta al judetului Bihor, Romania. Se afla
-                    in
-                    vestul
-                    Romaniei, pe raul Crisul Repede, in imediata apropiere a frontierei cu Ungaria.
-                    Totodata Oradea este si cel mai important oras din regiunea istorica Crisana. La recensamantul din
-                    2002
-                    municipiul avea 206.614 de locuitori. Zona metropolitana, care include si 11 comune invecinate,
-                    avea in
-                    anul 2002 populatia de 249.746 locuitori, dintre care 68.2% romani, 28.7% maghiari s.a. In perioada
-                    interbelica
-                    20,6% din populatia orasului era alcatuita din evrei, fiind consemnate de asemenea comunitati de
-                    germani,
-                    slovaci, ucraineni etc.
-                </p>
-                <p>
-                    Statiunile balneare Baile Felix si Baile 1 mai se afla la o distanta de 8 km, respectiv 4 km de
-                    oras.
-                    Pe
-                    langa apele
-                    termale recunoscute pe plan international pentru efectele terapeutice, in aceasta zona se gaseste o
-                    formatiune
-                    carstica spectaculoasa, mai exact, un aven cu o adancime de 86 de metri, denumit in zona "Craterul
-                    de
-                    la
-                    Betfia", precum si Paraul Peta, cu o vegetatie tropicala unica in Europa.
-                    De secole, municipiul Oradea a reprezentat un punct important de referinta pentru zona, fiind cel
-                    mai
-                    important
-                    centru cultural si comercial. In Evul Mediu, in Cetatea Oradiei exista un observator astronomic,
-                    iar
-                    astronomii
-                    care lucrau acolo foloseau meridianul Oradiei ca meridian de 0. Turismul oradean incepe sa se
-                    dezvolte,
-                    Oradea participand alaturi de Baile Felix la Targul de Turism de la Viena din ianuarie 2015.
-                </p>
+        <div class="slideshow">
+            <div class="slide fade">
+                <img src="images/1.jpg" alt="img1" />
             </div>
+            <div class="slide fade">
+                <img src="images/2.jpg" alt="img2" />
+            </div>
+            <div class="slide fade">
+                <img src="images/5.jpg" alt="img3" />
+            </div>
+            <a id="prev">&#10094;</a>
+            <a id="next">&#10095;</a>
         </div>
 
-        <div id="images">
-            <h2>slider goes here</h2>
-            <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        <div id="about">
+            <h2 class="title">Despre</h2>
+            <p>
+                Oradea, mai demult Oradea Mare, este municipiul de resedinta al judetului Bihor, Romania. Se afla
+                in
+                vestul
+                Romaniei, pe raul Crisul Repede, in imediata apropiere a frontierei cu Ungaria.
+                Totodata Oradea este si cel mai important oras din regiunea istorica Crisana. La recensamantul din
+                2002
+                municipiul avea 206.614 de locuitori. Zona metropolitana, care include si 11 comune invecinate,
+                avea in
+                anul 2002 populatia de 249.746 locuitori, dintre care 68.2% romani, 28.7% maghiari s.a. In perioada
+                interbelica
+                20,6% din populatia orasului era alcatuita din evrei, fiind consemnate de asemenea comunitati de
+                germani,
+                slovaci, ucraineni etc.
+            </p>
+            <p>
+                Statiunile balneare Baile Felix si Baile 1 mai se afla la o distanta de 8 km, respectiv 4 km de
+                oras.
+                Pe
+                langa apele
+                termale recunoscute pe plan international pentru efectele terapeutice, in aceasta zona se gaseste o
+                formatiune
+                carstica spectaculoasa, mai exact, un aven cu o adancime de 86 de metri, denumit in zona "Craterul
+                de
+                la
+                Betfia", precum si Paraul Peta, cu o vegetatie tropicala unica in Europa.
+                De secole, municipiul Oradea a reprezentat un punct important de referinta pentru zona, fiind cel
+                mai
+                important
+                centru cultural si comercial. In Evul Mediu, in Cetatea Oradiei exista un observator astronomic,
+                iar
+                astronomii
+                care lucrau acolo foloseau meridianul Oradiei ca meridian de 0. Turismul oradean incepe sa se
+                dezvolte,
+                Oradea participand alaturi de Baile Felix la Targul de Turism de la Viena din ianuarie 2015.
+            </p>
         </div>
 
         <div id="video">
-            <div style="background: blue; height: 500px; width: 100%;"></div>
+            <iframe width="1920" height="1080" src="https://www.youtube.com/embed/GbH-xcXQXug?controls=0" frameborder="0"
+                allowfullscreen></iframe>
         </div>
 
         <footer>
-            <a class="top" href="#">^</a>
-            <p class="copyright">©Copyright; Toate drepturile rezervate.</p>
+            <p class="copyright">Copyright &copy; <span id="year"></span> - All Rights Reserved</p>
+            <script>
+                const year = document.getElementById("year");
+                if (year) {
+                    year.innerText = (new Date()).getFullYear();
+                }
+            </script>
         </footer>
     </body>
 

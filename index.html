@@ -1,28 +1,98 @@
-<html>
-<link href='style.css' rel='stylesheet'>
+<!DOCTYPE html>
+<html lang="en">
 
-<ul>
-    <li><a><a href="index.html"><button type="button3">Acasa</button></a></li>
-    <button onclick="button2()">Noutati</button>
-    <li><a><a href="Video.html"><button type="button1">Video</button></a></li>
-    <li><a><a href="Poze.html"><button type="button">Poze</button> </a></li>
-</ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/favicon.ico">
+        <title>Oradea</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- <link href="style.css" rel="stylesheet"> -->
+        <link href="./stylesheet/header.css" rel="stylesheet">
+        <link href="./stylesheet/hero.css" rel="stylesheet">
+        <link href="./stylesheet/details.css" rel="stylesheet">
+        <link href="./stylesheet/images.css" rel="stylesheet">
+        <link href="./stylesheet/footer.css" rel="stylesheet">
+        <script src="./javascript/menu.js"></script>
+    </head>
 
-<head>
-    <script src="script.js"></script>
-</head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="#">Oradea</a>
+            </div>
+            <ul class="menu">
+                <li class="item">
+                    <a href="#details">About</a>
+                </li>
+                <li class="item">
+                    <a href="#images">Images</a>
+                </li>
+                <li class="item">
+                    <a href="#video">Video</a>
+                </li>
+            </ul>
+        </header>
 
-<body>
-    <h1 style="text-align:center;">Orasul Oradea</h1>
-    <p style="text-align:center; margin-top:60px;margin-bottom:60px;margin-right:100px;margin-left:100px;">Oradea,
-        mai demult Oradea Mare, este municipiul de resedinta al judetului Bihor, Romania. Se afla in vestul Romaniei, pe raul Crisul Repede, in imediata apropiere a frontierei cu
-        Ungaria.
-        Totodata Oradea este si cel mai important oras din regiunea istorica Crisana. La recensamantul din 2002
-        municipiul avea 206.614 de locuitori. Zona metropolitana, care include si 11 comune invecinate, avea in anul
-        2002 populatia de 249.746 locuitori, dintre care 68.2% romani, 28.7% maghiari s.a. In perioada interbelica
-        20,6% din populatia orasului era alcatuita din evrei, fiind consemnate de asemenea comunitati de germani,
-        slovaci, ucraineni etc.
-    </p>
-</body>
+        <div id="hero"></div>
+
+        <div id="details">
+            <h1 class="title">Orasul Oradea</h1>
+            <div class="columns-2">
+                <p>
+                    Oradea, mai demult Oradea Mare, este municipiul de resedinta al judetului Bihor, Romania. Se afla
+                    in
+                    vestul
+                    Romaniei, pe raul Crisul Repede, in imediata apropiere a frontierei cu Ungaria.
+                    Totodata Oradea este si cel mai important oras din regiunea istorica Crisana. La recensamantul din
+                    2002
+                    municipiul avea 206.614 de locuitori. Zona metropolitana, care include si 11 comune invecinate,
+                    avea in
+                    anul 2002 populatia de 249.746 locuitori, dintre care 68.2% romani, 28.7% maghiari s.a. In perioada
+                    interbelica
+                    20,6% din populatia orasului era alcatuita din evrei, fiind consemnate de asemenea comunitati de
+                    germani,
+                    slovaci, ucraineni etc.
+                </p>
+                <p>
+                    Statiunile balneare Baile Felix si Baile 1 mai se afla la o distanta de 8 km, respectiv 4 km de
+                    oras.
+                    Pe
+                    langa apele
+                    termale recunoscute pe plan international pentru efectele terapeutice, in aceasta zona se gaseste o
+                    formatiune
+                    carstica spectaculoasa, mai exact, un aven cu o adancime de 86 de metri, denumit in zona "Craterul
+                    de
+                    la
+                    Betfia", precum si Paraul Peta, cu o vegetatie tropicala unica in Europa.
+                    De secole, municipiul Oradea a reprezentat un punct important de referinta pentru zona, fiind cel
+                    mai
+                    important
+                    centru cultural si comercial. In Evul Mediu, in Cetatea Oradiei exista un observator astronomic,
+                    iar
+                    astronomii
+                    care lucrau acolo foloseau meridianul Oradiei ca meridian de 0. Turismul oradean incepe sa se
+                    dezvolte,
+                    Oradea participand alaturi de Baile Felix la Targul de Turism de la Viena din ianuarie 2015.
+                </p>
+            </div>
+        </div>
+
+        <div id="images">
+            <h2>slider goes here</h2>
+            <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        </div>
+
+        <div id="video">
+            <div style="background: blue; height: 500px; width: 100%;"></div>
+        </div>
+
+        <footer>
+            <a class="top" href="#">^</a>
+            <p class="copyright">©Copyright; Toate drepturile rezervate.</p>
+        </footer>
+    </body>
 
 </html>

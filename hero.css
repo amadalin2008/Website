@@ -1,0 +1,6 @@
+#hero {
+  background: #2d2d30 url('../images/d.jpg') 25%;
+  background-size: cover;
+  height: 350px;
+  padding-top: 50px;
+}

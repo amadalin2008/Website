@@ -1,0 +1,37 @@
+header {
+  background-color: #2d2d30;
+  display: flex;
+  height: 50px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header div.logo {
+  height: 100%;
+  width: 100px;
+}
+
+header ul.menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0 25px 0 0;
+  width: 100%;
+}
+
+header ul.menu li.item {
+  text-transform: uppercase;
+}
+
+header ul.menu li.item:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+header ul.menu li.item a,
+header ul.menu li.item a:focus,
+header ul.menu li.item a:hover {
+  color: #d5d5d5;
+  text-decoration: none;
+}

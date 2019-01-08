@@ -1,0 +1,11 @@
+#details {
+}
+
+#details > .title {
+  text-align: center;
+}
+
+#details > .columns-2 {
+  display: flex;
+  text-align: center;
+}
